@@ -1,7 +1,19 @@
 import express from 'express';
+import {
+  getAllUsers,
+  createUser,
+  getOneUser,
+  editUser,
+  deleteUser,
+} from './controllers/userControllers.js';
+
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.get('/', (req, res) => res.send('Connect to SQL exercise!'));
+app.use(express.json());
 
-app.listen(port, () => `Server up on port ${port}`);
+app.route('/users').get(getAllUsers).post(createUser);
+
+app.route('/users/:id').get(getOneUser).put(editUser).delete(deleteUser);
+
+app.listen(port, () => console.log(`Server up on port ${port}`));

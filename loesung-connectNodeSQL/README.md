@@ -1,6 +1,6 @@
 # Connect your NodeJS application to PostgreSQL
 
-[ ] Create an instance on ElephantSQL (you have a guide for that). Create the database with:
+[x] Create an instance on ElephantSQL (you have a guide for that). Create the database with:
 
 ```sql
 CREATE TABLE users (
@@ -34,15 +34,15 @@ Create an Express server with separate routes.
 The users:
 <br>
 
-- [ ] GET / : To get all the users
+- [x] GET / : To get all the users
       <br>
-- [ ] GET /:id : To get one user (with the id)
+- [x] GET /:id : To get one user (with the id)
       <br>
-- [ ] POST / -> To create a new user
+- [x] POST / -> To create a new user
       <br>
-- [ ] PUT /:id : To edit one user (with the id)
+- [x] PUT /:id : To edit one user (with the id)
       <br>
-- [ ] DELETE /:id : To delete one user (with the id)
+- [x] DELETE /:id : To delete one user (with the id)
 
 <br>
 The orders:
@@ -67,7 +67,7 @@ If you are finished with these, try to:
 
 - https://express-validator.github.io/docs/index.html
 
-[ ] Create a separate module for your pool object
+[x] Create a separate module for your pool object
 
 - https://node-postgres.com/guides/async-express
 
