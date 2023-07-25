@@ -38,7 +38,7 @@ const createUser = async (req, res) => {
 };
 
 /**
- * Function to create a user in the database. id is required from req.params
+ * Function to serve a single user from the database. id is required from req.params
  * @route GET /users/:id
  */
 const getOneUser = async (req, res) => {
@@ -59,7 +59,7 @@ const getOneUser = async (req, res) => {
 };
 
 /**
- * Function to create a user in the database. first_name, last_name and age required from the req.body and id is required from the req.params
+ * Function to update one user. first_name, last_name and age required from the req.body and id is required from the req.params
  * @route PUT /users/:id
  */
 const editUser = async (req, res) => {
@@ -87,7 +87,7 @@ const editUser = async (req, res) => {
 };
 
 /**
- * Function to create a user in the database. id is required from the req.params
+ * Function to deactivate one user in the database. id is required from the req.params
  * @route DELETE /users/:id
  */
 const deleteUser = async (req, res) => {
