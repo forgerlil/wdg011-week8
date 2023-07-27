@@ -1,14 +1,14 @@
 # Routing Middleware
 
-[ ] Create a server.js with the Express application.
+[x] Create a server.js with the Express application.
 <br>
-[ ] Create a function secure() that needs to apply on a GET route ‘/verify/:token’ (app.get()).
+[x] Create a function secure() that needs to apply on a GET route ‘/verify/:token’ (app.get()).
 <br>
-[ ] Inside the secure function, inspect if there is a param with the name token and a value
+[x] Inside the secure function, inspect if there is a param with the name token and a value
 <br>
-[ ] If the token has a value and is longer than 3 characters, continue (i.e. send the message ‘Hello World!’).
+[x] If the token has a value and is longer than 3 characters, continue (i.e. send the message ‘Hello World!’).
 <br>
-[ ] Create a route to manage the case when the token doesn’t exist and send back a response with the HTTP code 403.
+[x] Create a route to manage the case when the token doesn’t exist and send back a response with the HTTP code 403.
 
 ### Additional steps
 
