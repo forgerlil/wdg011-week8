@@ -41,22 +41,22 @@ See the Multer (https://www.npmjs.com/package/multer) documentation.
 
 Level 1:
 
-[ ] .Copy-paste the above html boilerplate into an index.html file
+[x] .Copy-paste the above html boilerplate into an index.html file
 <br />
-[ ] .Set up your Node/Express server like we’ve previously seen
+[x] .Set up your Node/Express server like we’ve previously seen
 <br />
-[ ] .Create a POST route handler for /upload-profile-pic
+[x] .Create a POST route handler for /upload-profile-pic
 <br />
-[ ] .Try to set up Multer on your server following the documentation. You’ll have to set a destination storage, and the way you want the filenames to be handled (https://www.npmjs.com/package/multer#diskstorage, https://medium.com/dataseries/configuring-express-multer-middleware-and-checking-file-information-497dc7af9eea)
-[ ] .Pass the middleware to your POST route handler; see if you can console.log(req.file) inside of it
+[x] .Try to set up Multer on your server following the documentation. You’ll have to set a destination storage, and the way you want the filenames to be handled (https://www.npmjs.com/package/multer#diskstorage, https://medium.com/dataseries/configuring-express-multer-middleware-and-checking-file-information-497dc7af9eea)
+[x] .Pass the middleware to your POST route handler; see if you can console.log(req.file) inside of it
 <br />
-[ ] .If you can; you’re all set, you might want to implement some error handling logic here in case you don’t have a file
+[x] .If you can; you’re all set, you might want to implement some error handling logic here in case you don’t have a file
 <br />
-[ ] .And then some logic when you do have a file. Look at the info you get. Check if the file is saved correctly, with the right extension name (tip: Multer removes the filename extension by default, so you need to add it back) (https://nodejs.org/api/path.html#path_path_extname_path)
+[x] .And then some logic when you do have a file. Look at the info you get. Check if the file is saved correctly, with the right extension name (tip: Multer removes the filename extension by default, so you need to add it back) (https://nodejs.org/api/path.html#path_path_extname_path)
 <br />
-[ ] .You’ll need to use another application level middleware for Express to handle serving static files to the client (https://expressjs.com/en/starter/static-files.html)
+[x] .You’ll need to use another application level middleware for Express to handle serving static files to the client (https://expressjs.com/en/starter/static-files.html)
 <br />
-[ ] .You want to send the picture back to the client for immediate display. You can `res.send(<h2>Here is the picture:</h2><img src="<the path to the image on your server>" alt="something"/>)` here (https://expressjs.com/en/api.html#res.send)
+[x] .You want to send the picture back to the client for immediate display. You can `res.send(<h2>Here is the picture:</h2><img src="<the path to the image on your server>" alt="something"/>)` here (https://expressjs.com/en/api.html#res.send)
 
 Level 2:
 
